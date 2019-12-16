@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Item
+  - Hand
+  - Scroll
+  - Man
+  - Background
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 780580641
+    locked: 0
+  - name: Alchemist
+    uniqueID: 2838385823
+    locked: 0
+  - name: Items
+    uniqueID: 3600019297
+    locked: 0
+  - name: Particles
+    uniqueID: 354884685
+    locked: 0
+  - name: UI
+    uniqueID: 2617422007
+    locked: 0
+  - name: Popups
+    uniqueID: 2478049667
+    locked: 0
