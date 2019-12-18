@@ -7,55 +7,55 @@ public class AllItems : MonoBehaviour
 
     public static List<string[]> allItems = new List<string[]>() { 
         new[] { "Mud", "Earth", "Water", "Reason of the nickname to Waters, because he liked to play in it" },
-        new[] { "Lake", "Mud", "Water", "Everybody sings about lakes. Think of something else" }, //TODO
+        new[] { "Lake", "Mud", "Water", "Everybody sings about lakes. Think of something else" }, 
         new[] { "Rain", "Cloud", "Water", "Somebody call Rihanna!" }, 
         new[] { "Brick", "Fire", "Mud", "Hey! Teachers! Leave them kids alone" },
-        new[] { "Wall", "Brick", "Brick", "So you figured that out as well. Have you heard the whole album yet?" }, //TODO
-        new[] { "Lava", "Earth", "Fire", "Lots of cool info here" }, //TODO
-        new[] { "Building", "Wall", "Wall", "Why a building? Well, this game is about rock, not house"}, //TODO
-        new[] { "Sea", "Lake", "Water", "Don't follow the stream" }, //TODO
-        new[] { "Sea", "Lake", "Lake", "Don't follow the stream" }, //TODO
+        new[] { "Wall", "Brick", "Brick", "So you figured that out as well. Clever you!" }, 
+        new[] { "Lava", "Earth", "Fire", "Almost as hot as the riff I just wrote" }, 
+        new[] { "Building", "Wall", "Wall", "No house of course. This is a hard rock game."}, 
+        new[] { "Sea", "Lake", "Water", "Don't follow the stream" }, 
+        new[] { "Sea", "Lake", "Lake", "Don't follow the stream" }, 
         new[] { "Cloud", "Air", "Water", "WTF my computer broke down, all my new files are gone" },
-        new[] { "Energy", "Fire", "Air", "Or you could just do a really fast powerslide" }, //More things that can be energy?
-        new[] { "Lightning", "Cloud", "Energy", "Don't follow the stream" },
+        new[] { "Energy", "Fire", "Air", "Or you could just do a really fast powerslide" }, 
+        new[] { "Lightning", "Cloud", "Energy", "Very very frightening me" },
         new[] { "Pressure", "Air", "Air", "The obtrusive feeling when trying to come up with a good flavour text" }, 
         new[] { "Pressure", "Earth", "Earth", "The obtrusive feeling when trying to come up with a good flavour text" },
-        new[] { "Sky", "Air", "Cloud", "Every positive lyric writer think they can tounch this. They're also always high" }, //TODO
+        new[] { "Sky", "Air", "Cloud", "Wrong way dude" }, 
         new[] { "Sun", "Sky", "Fire", "Here it comes!" },
-        new[] { "Planet", "Earth", "Sky", "I don't believe in humans" }, //TODO
-        new[] { "Planet", "Sun", "Earth", "I don't believe in humans" }, //TODO
-        new[] { "Star", "Planet", "Sun", "How I wonder where you are..." }, //TODO
-        new[] { "Wind", "Air", "Pressure", "You're telling me the answer has been here the whole time?" }, //TODO
-        new[] { "Wave", "Wind", "Sea", "Old or new?" }, //TODO
-        new[] { "Sound", "Air", "Wave", "..." }, //TODO
-        new[] { "Music", "Sound", "Sound", "Can appearantly give life to hills" }, //TODO
-        new[] { "Music", "Sound", "Human",  "Can appearantly give life to hills" }, //TODO
-        new[] { "Hell", "Earth", "Lava", "Also a small village in Norway" }, //TODO
-        new[] { "Stone", "Lava", "Air", "Just keep on rolling" }, //TODO
-        new[] { "Metal", "Stone", "Fire", "..." }, //TODO
-        new[] { "Heavy Metal", "Music", "Metal", "You're clever, you!" }, //TODO
-        new[] { "Electricity", "Metal", "Energy", "..." }, //TODO
-        new[] { "Sand", "Pressure", "Stone", "Sand... man, something, right?" }, //TODO
+        new[] { "Planet", "Earth", "Sky", "I don't believe in humans" }, 
+        new[] { "Planet", "Sun", "Earth", "I don't believe in humans" }, 
+        new[] { "Star", "Planet", "Sun", "How I wonder where you are" }, 
+        new[] { "Wind", "Air", "Pressure", "You're telling me the answer has been here the whole time?" }, 
+        new[] { "Wave", "Wind", "Sea", "Definitely better when it's Brittish" }, 
+        new[] { "Sound", "Air", "Wave", "Keep it up! You might be able to make a song soon!" }, 
+        new[] { "Music", "Sound", "Sound", "That's what I'm talking about" }, 
+        new[] { "Music", "Sound", "Human",  "That's what I'm talking about" }, 
+        new[] { "Hell", "Earth", "Lava", "Also a small village in Norway" }, 
+        new[] { "Stone", "Lava", "Air", "Just keep on rolling" }, 
+        new[] { "Metal", "Stone", "Fire", "You can't kill the metal" },
+        new[] { "Heavy Metal", "Music", "Metal", "Didn't actually thought you'd figure that out" }, 
+        new[] { "Electricity", "Metal", "Energy", "Acoustic guitars are just not allowed here" }, 
+        new[] { "Sand", "Pressure", "Stone", "Sand... boy, something, right?" }, 
         new[] { "Glass", "Sand", "Fire", "If it ain't broken you need to turn up that bass amp!" },
         new[] { "Time", "Glass", "Sand", "Too short when playing your own solo, eternity when someone else does" },
-        new[] { "Bacteria Cell", "Lake", "Lightning", "..." }, //TODO
-        new[] { "Bacteria Cell", "Sea", "Lightning", "..." }, //TODO
-        new[] { "Life", "Bacteria Cell", "Time", "..." }, //TODO
-        new[] { "Animal", "Lake", "Life", "..." }, //TODO
-        new[] { "Animal", "Sea", "Life", "..." }, //TODO
+        new[] { "Bacteria", "Lake", "Lightning", "I feel stupid, it's contagious" }, //TODO
+        new[] { "Bacteria", "Sea", "Lightning", "..." }, //TODO
+        new[] { "Life", "Bacteria Cell", "Time", "Yes! Now you might be getting somewhere" }, 
+        new[] { "Animal", "Lake", "Life", "Don't have a band name yet? Just choose an animal and let your baby sister spell it" }, 
+        new[] { "Animal", "Sea", "Life", "Don't have a band name yet? Just choose an animal and let your baby sister spell it" }, 
         new[] { "Plant", "Life", "Earth", "No, of course I don't mean Robert" }, 
-        new[] { "Human", "Animal", "Time", "Wow, maybe you can start a band now?" }, 
-        new[] { "Oil", "Earth", "Time", "Midnight..." }, //TODO
+        new[] { "Human", "Animal", "Time", "Wow, maybe you can start a band soon?" }, 
+        new[] { "Oil", "Earth", "Time", "Fantastic fuel to burn a bed" }, 
         new[] { "Plastic", "Oil", "Human", "Not so fantastic" }, 
-        new[] { "Glitter", "Plastic", "Star", "..." }, //TODO
-        new[] { "Pyro", "Pressure", "Fire", "Always be prepared, you never know when the pyro person pushes the button" }, //TODO
-        new[] { "Love", "Human", "Human", "..." }, //TODO
-        new[] { "Cotton", "Cloud", "Plant", "..." }, //TODO
+        new[] { "Glitter", "Plastic", "Star", "Nah, I prefer the sparkles from a freshly poured beer" }, 
+        new[] { "Pyro", "Pressure", "Fire", "Always be prepared, you never know when the pyro person pushes the button" }, 
+        new[] { "Love", "Human", "Human", "I'm sorry, you won't get time for this if you wanna be a rock star" }, 
+        new[] { "Cotton", "Cloud", "Plant", "" }, //TODO
         new[] { "Tool", "Human", "Metal", "..." }, //TODO - something about the band?
         new[] { "Thread", "Tool", "Cotton", "..." }, //TODO
         new[] { "Rope", "Thread", "Thread", "..." }, //TODO
-        new[] { "Clothes", "Tool", "Thread", "..." }, //TODO 
-        new[] { "Outfit", "Clothes", "Clothes", "..." }, //TODO - maybe also artist + clothes?
+        new[] { "Clothes", "Tool", "Thread", "Please just keep them on. There ARE fans on stage" }, 
+        new[] { "Outfit", "Clothes", "Clothes", "Never, just NEVER, wear your own band's t-shirt on stage" }, 
         new[] { "Dance Band", "Clothes", "Glitter", "Who put this in here? Serioulsy? Who!?" },
         new[] { "Cable", "Rope", "Electricity", "Are you the one making a knot? Get out!" },
         new[] { "Singer", "Human", "Sound", "If they put as much effort in learning the lyrics as asking for more monitor they might be decent band mates" },
@@ -63,30 +63,30 @@ public class AllItems : MonoBehaviour
         new[] { "XLR Cable", "Microphone", "Cable", "The mic will definatley detach if you spin it around every single song. It is known" },
         new[] { "Satan", "Hell", "Animal", "From whence you came, you shall remain, until you are complete again" },
         new[] { "Satan", "Hell", "Human", "From whence you came, you shall remain, until you are complete again" },
-        new[] { "Death", "Time", "Human", "..." }, //TODO
+        new[] { "Death", "Time", "Human", "" }, //TODO
         new[] { "Death Metal", "Heavy Metal", "Death", "As long as you growl your mother won't be able to hear the lyrics" },
         new[] { "Death Metal", "Metal", "Death", "As long as you growl your mother won't be able to hear the lyrics" },
         new[] { "Death Metal", "Heavy Metal", "Satan", "As long as you growl your mother won't be able to hear the lyrics" },
         new[] { "Tree", "Plant", "Time", "..." }, //TODO
-        new[] { "Wood", "Tool", "Tree", "..." },
+        new[] { "Wood", "Tool", "Tree", "..." }, //TODO
         new[] { "Drum Kit", "Wood", "Plastic", "Never complain on the kit at the venue if you're too lazy to bring your own" },
-        new[] { "Drum Kit", "Musician", "Drummer", "Softer? What do you mean play softer?" },
-        new[] { "Musician", "Music", "Human", "I just can't listen to this song anymore, the guitars aren't panned correctly" },
+        new[] { "Drummer", "Musician", "Drum Kit", "Softer? What do you mean play softer?" },
+        new[] { "Musician", "Music", "Human", "I just can't listen to this song, the guitars aren't panned correctly" },
         new[] { "Stage Fright", "Musician", "Pressure", "Ever wondered why there are 1 bottle of wine and 30 beer cans on my rider?" }, 
-        new[] { "Drumsticks", "Tool", "Wood", "Ever wondered why it looks like a sawdust behind the drums?" },
+        new[] { "Drumsticks", "Tool", "Wood", "Ever wondered why it looks like sawdust behind the drums?" },
         new[] { "Knife", "Stone", "Metal", "..." }, //TODO
-        new[] { "Leather", "Knife", "Animal", "..." }, //TODO
-        new[] { "Studded Belt", "Metal", "Leather", "..." }, //TODO
-        new[] { "Leather Jacket", "Leather", "Clothes", "You need to own at least one" }, //TODO
-        new[] { "Guitar", "Wood", "Electricity", "..." }, //TODO
+        new[] { "Leather", "Knife", "Animal", "Now you might finally dress cool!" }, 
+        new[] { "Studded Belt", "Metal", "Leather", "Naaah, only one? I think I can fit a few more" }, 
+        new[] { "Leather Jacket", "Leather", "Clothes", "You need to own at least one" }, 
+        new[] { "Guitar", "Wood", "Electricity", "If you don't have one you're not actually allowed to play this game, sorry" }, //TODO
         new[] { "Guitarist", "Guitar", "Musician", "Hey what du you mean we can't have a guitar solo in every song?" }, //TODO - make this with human?
         new[] { "Fan", "Love", "Guitarist", "..." }, //TODO
         new[] { "Fan", "Love", "Drummer", "..." }, //TODO
         new[] { "Fan", "Love", "Singer", "..." }, //TODO
         new[] { "Crowd", "Fan", "Fan", "..." }, //TODO
-        new[] { "Crowd Surfing", "Crowd", "Wave", "..." }, //TODO
-        new[] { "Tele Cable", "Guitar", "Cable", "..." }, //TODO
-        new[] { "Fist Sign", "Fan", "Heavy Metal", "..." },
+        new[] { "Crowd Surfing", "Crowd", "Wave", "I recommend you count the crowd before, I've seen bad things..." }, 
+        new[] { "Tele Cable", "Guitar", "Cable", "Just fucking buy your own" }, 
+        new[] { "Fist Sign", "Fan", "Heavy Metal", "Horns up" },
         
         /*
         new[] { "Double Neck", "Guitar", "Guitar", "Isn't it quite lame you don't play both at the same time?" }, //TODO

@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{2A476C48-B1DE-8F29-1DB2-F3BC2FF70ACD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AllItems.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameController.cs" Line="359" Column="89" />
+      <File FileName="Assets/Scripts/AllItems.cs" Line="53" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HardRockAlchemistUnity" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="AllItems.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="15602ac6-4fb8-47c2-9b3b-b2bbfca1b3be" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

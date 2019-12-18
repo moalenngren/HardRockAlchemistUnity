@@ -923,8 +923,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: A lot of information goes here and here, and there will be some short or
     some long stuff thingys here
   m_isRightToLeft: 0
@@ -1340,8 +1338,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &626160665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1360,8 +1356,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 16a3bfda780cf4c90a588f7c1e70a0aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8141,8 +8135,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: b1836432a529749c099d2827b323ea72, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8255,8 +8247,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1830366035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8275,8 +8265,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 091ee562760bd4df8aaa7c4bcb623f0c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8569,8 +8557,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Item name here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4341ed275dfc84585a5881f28bcd2d8e, type: 2}
@@ -8777,7 +8763,7 @@ PrefabInstance:
     - target: {fileID: 2581748025607807261, guid: ef3d0bfa326c7438293fe24e624ffe1b,
         type: 3}
       propertyPath: m_Name
-      value: Item1
+      value: f
       objectReference: {fileID: 0}
     - target: {fileID: 2581748025607807260, guid: ef3d0bfa326c7438293fe24e624ffe1b,
         type: 3}
