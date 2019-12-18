@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{15FC9AC2-BF71-A674-3ED8-7483DCA7DAB1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AllItems.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="194" Column="42" />
-      <File FileName="Assets/Scripts/Element.cs" Line="34" Column="37" />
-      <File FileName="Assets/Scripts/AllItems.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="53" Column="78" />
+      <File FileName="Assets/Scripts/Element.cs" Line="34" Column="6" />
+      <File FileName="Assets/Scripts/AllItems.cs" Line="66" Column="147" />
       <File FileName="Assets/Scripts/AudioManager.cs" Line="44" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>

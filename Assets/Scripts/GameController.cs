@@ -22,21 +22,15 @@ public class GameController : MonoBehaviour
     private int pageIndex = 0;
     private int points = 0;
     private Element currentDiscovery;
-   // private string currentDiscovery;
-   // private string currentDiscoveryInfo;
     private bool isInteractable = true;
     [SerializeField] ParticleSystem inventingParticle;
     [SerializeField] ParticleSystem leftSnapParticle;
     [SerializeField] ParticleSystem rightSnapParticle;
-    // [SerializeField] ParticleSystem leftInventingParticle;
-    //  [SerializeField] ParticleSystem rightInventingParticle;
     private Coroutine inventingRoutine = null;
     private GameState gameState;
     private ItemState itemState;
     private Coroutine PopItemRoutine = null;
     private GameObject lastHand;
-  //  private int showItemsStartIndex;
-  //  private int showItemsEndIndex;
 
     private enum ItemState
     {
@@ -54,12 +48,11 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        discoveredItems = new List<string> { "Air", "Earth", "Fire", "Water", "Lava", "Mud", "Rain", "Lake", "Pressure", "Energy", "Hell",};
+        discoveredItems = new List<string> { "Air", "Earth", "Fire", "Water", "Lava", "Mud", "Rain", "Lake", "Pressure", "Energy", "Hell",
+        "Rain", "Sea", "Planet", "Star", "Life", "Time", "Bacteria", "Sky", "Wave", "Sound", "Wind", "Music"};
         itemPlaceholders = itemsPosParent.GetComponentsInChildren<Element>();
         HideItems();
-       // showItemsStartIndex = 0;
-       // showItemsEndIndex = discoveredItems.Count - 1;
-        ShowFoundItems(/*showItemsStartIndex, showItemsEndIndex*/); //Load from user defaults!!!!!!!!
+        ShowFoundItems(); //Load from user defaults!!!!!!!!
         ShowArrows();
         movingElement.gameObject.SetActive(false);
         leftHandItem.GetComponent<SpriteRenderer>().enabled = false;
@@ -68,7 +61,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (/*isInteractable && */ gameState == GameState.matching)
+        if (gameState == GameState.matching)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -120,13 +113,6 @@ public class GameController : MonoBehaviour
                     {
                         OnItemReleased(hitHand.collider);
                     }
-                   /* else if (hitSelf.collider != null && hitSelf.collider.gameObject.GetComponent<Element>().GetText() == grabbedItem.GetText())
-                    {
-                        Debug.Log("RELEASED ON SELF");
-                        currentDiscovery = grabbedItem;
-                                currentDiscovery = grabbedItem;
-                                PopUp();
-                    } */
                     else
                     {
                         Debug.Log("released wherever");
@@ -184,9 +170,6 @@ public class GameController : MonoBehaviour
         {
             CompareHandItems();
         }
-      
-       // grabbedItem = null;
-       // movingElement.gameObject.SetActive(false);
     }
 
     private void CompareHandItems()
@@ -276,41 +259,25 @@ public class GameController : MonoBehaviour
         leftHandItem.GetComponent<SpriteRenderer>().enabled = false;
         leftHandItem.SetText("Itemname");
         rightHandItem.GetComponent<SpriteRenderer>().enabled = false;
-       // Debug.Log("INVENTED ITEM, NOW SHOW ITEMS END INDEX IS: " + showItemsEndIndex);
         rightHandItem.SetText("Itemname");
-       // if (showItemsEndIndex == 11) pageIndex++;
-       // Debug.Log("PAGE INDEX IS: " + pageIndex);
-      //  showItemsEndIndex = (int)Mathf.Repeat(showItemsEndIndex + 1, 12);
-        ShowFoundItems(/*showItemsStartIndex, showItemsEndIndex*/);
+        ShowFoundItems();
         ShowArrows();
     }
 
     public void ClickedLeftArrow()
     {
         pageIndex--;
-      //  showItemsStartIndex = pageIndex * 12;
-      //  showItemsEndIndex = showItemsStartIndex + 12;
-        ShowFoundItems(/*showItemsStartIndex, showItemsEndIndex*/);
+        ShowFoundItems();
         ShowArrows();
+        AudioManager.PlayAudio(AudioManager.instance.pageTurn);
     }
 
     public void ClickedRightArrow()
     {
         pageIndex++;
-     //   showItemsStartIndex = pageIndex * 12; //
-       // showItemsEndIndex = showItemsStartIndex;
-
-        /*
-        for (int i = 1; i <= discoveredItems.Count - showItemsStartIndex; i++)
-        {
-            if (showItemsEndIndex - showItemsStartIndex != 12)
-            {
-                showItemsEndIndex++;
-            }
-        } */
-        //(discoveredItems.Count - 1) - (showItemsStartIndex * 12);
-        ShowFoundItems(/*showItemsStartIndex, 12*/);
+        ShowFoundItems();
         ShowArrows();
+        AudioManager.PlayAudio(AudioManager.instance.pageTurn);
     }
 
     private void ShowArrows()
@@ -335,32 +302,8 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void ShowFoundItems(/*int start, int end*/)
+    private void ShowFoundItems()
     {
-        // pageIndex == 0 -> 0 - 11
-        //    pageIndex == 1 -> pageIndex
-
-      //  Debug.Log("SHOWING ITEMS FROM " + start + " TO " + (end + 1));
-        /*
-        int itemIndex1 = 0;
-
-        foreach (Element item in itemPlaceholders)
-        {
-            if (pageIndex * 12 <= discoveredItems.Count)
-            item.SetText("Itemname");
-            item.SetSprite(Resources.Load<Sprite>(discoveredItems[0]));
-            item.gameObject.SetActive(false);
-        }
-
-        int itemIndex = 0;
-        for (int i = start; i <= end; i++)
-        {
-            itemPlaceholders[itemIndex].SetText(discoveredItems[i]);
-            itemPlaceholders[itemIndex].SetSprite(Resources.Load<Sprite>(discoveredItems[i]));
-            itemPlaceholders[itemIndex].gameObject.SetActive(true);
-            itemIndex++;
-        } */
-
         for (int i = 0; i < 12; i++)
         {
             int itemIndex = i + pageIndex * 12;
