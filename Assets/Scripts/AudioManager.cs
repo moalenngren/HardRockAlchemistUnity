@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] public AudioClip pageTurn;
     [SerializeField] List<AudioClip> errorVoices;
     [SerializeField] List<AudioClip> successVoices;
+    [SerializeField] List<AudioClip> inventingSounds;
     [SerializeField] AudioSource voiceSource;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioSource jingleSource;
@@ -31,6 +32,12 @@ public class AudioManager : MonoBehaviour
     {
         instance.voiceSource.clip = instance.successVoices[Random.Range(0, instance.errorVoices.Count)];
         instance.voiceSource.Play();
+    }
+
+    public static void PlayInventingSound()
+    {
+        instance.jingleSource.clip = instance.inventingSounds[Random.Range(0, instance.inventingSounds.Count)];
+        instance.jingleSource.Play();
     }
 
     public static void PlayAudio(AudioClip clip)

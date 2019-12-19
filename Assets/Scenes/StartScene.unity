@@ -923,6 +923,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: A lot of information goes here and here, and there will be some short or
     some long stuff thingys here
   m_isRightToLeft: 0
@@ -953,8 +955,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 41.5
-  m_fontSizeBase: 41.5
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -999,7 +1001,7 @@ MonoBehaviour:
     spaceCount: 19
     wordCount: 20
     linkCount: 0
-    lineCount: 5
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1338,6 +1340,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &626160665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1356,6 +1360,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 16a3bfda780cf4c90a588f7c1e70a0aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1384,7 +1390,7 @@ GameObject:
   - component: {fileID: 642503867}
   - component: {fileID: 642503866}
   m_Layer: 0
-  m_Name: Music
+  m_Name: CaveAmbiance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2451,12 +2457,12 @@ PrefabInstance:
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1200001
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
@@ -2506,7 +2512,7 @@ PrefabInstance:
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.080000006
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
@@ -8135,6 +8141,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: b1836432a529749c099d2827b323ea72, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8247,6 +8255,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1830366035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8265,6 +8275,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 091ee562760bd4df8aaa7c4bcb623f0c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8324,6 +8336,133 @@ Transform:
   - {fileID: 439915708}
   m_Father: {fileID: 1012264775}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1976354028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976354030}
+  - component: {fileID: 1976354029}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1976354029
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976354028}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 151c38d7207534f479afd8a48c7164f7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.35
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1976354030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976354028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0085318, y: -0.44562218, z: 7.1550093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2063703457
 PrefabInstance:
@@ -8485,6 +8624,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ed6f5565c66c44d9987d8d47bfb09de7, type: 3}
   - {fileID: 8300000, guid: 9c0e2cd1e5d644e228e92dfc382b454c, type: 3}
   - {fileID: 8300000, guid: 9f2d8a463166e4a558d90f93cc0e07a4, type: 3}
+  inventingSounds:
+  - {fileID: 8300000, guid: aba471c2bb19446f48bbeaf981055dd1, type: 3}
+  - {fileID: 8300000, guid: 0edc52d67d28f419a89db889a517d0cb, type: 3}
+  - {fileID: 8300000, guid: ee5e7aed54bf24d16a038d182d6a6eaf, type: 3}
+  - {fileID: 8300000, guid: 5d57628972ae8465c9d3c0521e4cb5a9, type: 3}
+  - {fileID: 8300000, guid: eaac18e8bc1004509ae5186381a61222, type: 3}
+  - {fileID: 8300000, guid: e5429db2c878e441faf230f5ac199d9b, type: 3}
+  - {fileID: 8300000, guid: d20a3eb6c42344e16ac742180e808e7c, type: 3}
   voiceSource: {fileID: 737589195}
   audioSource: {fileID: 1533744628}
   jingleSource: {fileID: 1469698616}
@@ -8557,6 +8704,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Item name here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4341ed275dfc84585a5881f28bcd2d8e, type: 2}
@@ -8586,8 +8735,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8855,7 +9004,7 @@ PrefabInstance:
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.116
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
@@ -8910,7 +9059,7 @@ PrefabInstance:
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.080000006
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5472703544345377742, guid: ce79a6a53e3ca47e8b839cd17103fe63,
         type: 3}

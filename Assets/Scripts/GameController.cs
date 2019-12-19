@@ -48,8 +48,8 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        discoveredItems = new List<string> { "Air", "Earth", "Fire", "Water", "Lava", "Mud", "Rain", "Lake", "Pressure", "Energy", "Hell",
-        "Rain", "Sea", "Planet", "Star", "Life", "Time", "Bacteria", "Sky", "Wave", "Sound", "Wind", "Music"};
+        discoveredItems = new List<string> { "Air", "Earth", "Fire", "Water" }; /* "Lava", "Mud", "Rain", "Lake", "Pressure", "Energy", "Hell",
+        "Rain", "Sea", "Planet", "Star", "Life", "Time", "Bacteria", "Sky", "Wave", "Sound", "Wind", "Music"}; */
         itemPlaceholders = itemsPosParent.GetComponentsInChildren<Element>();
         HideItems();
         ShowFoundItems(); //Load from user defaults!!!!!!!!
@@ -154,7 +154,7 @@ public class GameController : MonoBehaviour
 
     private void MoveElement(Vector2 pos)
     {
-         movingElement.transform.position = pos;
+        movingElement.transform.position = pos;
     }
 
     private void OnItemReleased(Collider2D coll)
@@ -201,7 +201,7 @@ public class GameController : MonoBehaviour
 
         if (itemState == ItemState.cantBeInvented)
         {
-            Debug.Log("Items are not matching"); 
+            Debug.Log("Items are not matching");
             AudioManager.PlayErrorVoice();
             if (PopItemRoutine != null) StopCoroutine(PopItemRoutine);
             PopItemRoutine = StartCoroutine(PopItemAfterTime());
@@ -212,7 +212,7 @@ public class GameController : MonoBehaviour
     IEnumerator PopItemAfterTime()
     {
         yield return new WaitForSeconds(1f);
-       // AudioManager.PlayAudio(AudioManager.instance.pop);
+        // AudioManager.PlayAudio(AudioManager.instance.pop);
         lastHand.GetComponent<SpriteRenderer>().enabled = false;
         lastHand.GetComponent<Element>().SetText("Itemname");
 
@@ -282,8 +282,8 @@ public class GameController : MonoBehaviour
 
     private void ShowArrows()
     {
-        Debug.Log("Checking arrows");
-        if (pageIndex == 0) {
+        if (pageIndex == 0)
+        {
             leftArrow.GetComponent<Image>().enabled = false;
         }
         else
@@ -291,14 +291,13 @@ public class GameController : MonoBehaviour
             leftArrow.GetComponent<Image>().enabled = true;
         }
 
-        if (discoveredItems.Count < pageIndex * 12 + 13) {
+        if (discoveredItems.Count < pageIndex * 12 + 13)
+        {
             rightArrow.GetComponent<Image>().enabled = false;
-            Debug.Log("Discovered item are " + discoveredItems.Count);
         }
         else
         {
             rightArrow.GetComponent<Image>().enabled = true;
-            Debug.Log("Discovered item are " + discoveredItems.Count);
         }
     }
 
@@ -309,14 +308,12 @@ public class GameController : MonoBehaviour
             int itemIndex = i + pageIndex * 12;
             if (discoveredItems.Count > itemIndex) //index is in discovered items
             {
-                Debug.Log("i is " + i + " and itemIndex is" + itemIndex);
                 itemPlaceholders[i].SetText(discoveredItems[itemIndex]);
                 itemPlaceholders[i].SetSprite(Resources.Load<Sprite>(discoveredItems[itemIndex]));
                 itemPlaceholders[i].gameObject.SetActive(true);
             }
             else
             {
-                Debug.Log("SETTING EMPTY ITEM");
                 itemPlaceholders[i].SetText("Itemname");
                 itemPlaceholders[i].SetSprite(Resources.Load<Sprite>(discoveredItems[0]));
                 itemPlaceholders[i].gameObject.SetActive(false);
